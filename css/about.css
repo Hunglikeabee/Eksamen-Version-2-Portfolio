@@ -1,0 +1,55 @@
+main {
+    background-color: var(--offwhite);
+}
+
+.about__container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 40px 10px;
+}
+
+.about-me {
+    background-color: var(--offwhite);
+    max-width: 400px;
+    align-self: center;
+}
+
+.about-me h1 {
+    text-align: center;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.about-me p {
+    text-align: left;
+    padding: 10px;
+}
+
+.image-dad {
+    width: 300px;
+    height: 450px;
+    max-width: 90%;
+    background-image: url("../images/dadleon.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 700px) {
+    .about__container {
+        flex-direction: column;
+    }
+
+    .about-me {
+        margin: 0 auto;
+    }
+
+    .image-dad {
+        
+        margin: 20px auto;
+        height: 400px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,43 @@
+main {
+  padding-bottom: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.posts__button-more {
+  display: grid;
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 24px;
+  width: 200px;
+  margin: 30px auto;
+  border-radius: var(--defaultradius);
+  padding: 10px;
+}
+
+.posts__button-more:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+
+
+
+/* Sort button */
+.selection-button {
+  display: block;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+#sortby {
+  border-radius: var(--defaultradius);
+  border-style: none;
+}

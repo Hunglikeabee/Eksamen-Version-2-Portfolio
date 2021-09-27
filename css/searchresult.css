@@ -1,0 +1,16 @@
+.search-result {
+  width: 600px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.search-error {
+  color: var(--red);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
