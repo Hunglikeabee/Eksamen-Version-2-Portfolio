@@ -45,9 +45,7 @@ async function getMyBlog() {
                                                             <div aria-hidden="true">Difficulty: ${difficultyDice}</div>
                                                         </div><div class="text-posts" aria-hidden="true">${resultPosts[i].excerpt.rendered}</div></div></a>
                                                         <div class="divider-line"></div>`;
-                
                 }
-    
             }       
     }
     catch(error) {
