@@ -8,17 +8,17 @@ theHeader.innerHTML = ` <section class="header-menu">
                                 <label for="hamburger" class="hamburger__icon-menu" tabindex="0"><i class="fas fa-bars"></i></label>
                                 <input type="checkbox" id="hamburger">
                                 <div class="hamburger__dropdown-menu">
-                                    <a href="index.html" class="active">HOME</a>
+                                    <a href="index.html" >HOME</a>
                                     <a href="posts.html">BLOGS</a>
                                     <a href="contact.html">CONTACT</a>
                                     <a href="about.html">ABOUT</a>
                                 </div>
                                 <nav>
                                     <ul>
-                                        <li><a href="index.html" class="active">HOME</a></li>
-                                        <li><a href="posts.html">BLOGS</a></li>
-                                        <li><a href="contact.html">CONTACT</a></li>
-                                        <li><a href="about.html">ABOUT</a></li>
+                                        <li><a href="index.html" class="menu">HOME</a></li>
+                                        <li><a href="posts.html" class="menu">BLOGS</a></li>
+                                        <li><a href="contact.html" class="menu">CONTACT</a></li>
+                                        <li><a href="about.html" class="menu">ABOUT</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -55,6 +55,16 @@ theFooter.innerHTML = `<section class="footer__container">
                             </div>
                         </section>
                         <div class="copyright">&copy; Renovation Dad</div>`
+
+/* Add ACTIVE class to appropriate page */
+
+function makeActiveLink() {
+    let url = window.location.href;
+    let lastPart = url.split("/")[3];
+    document.querySelector('nav a[href="' + lastPart + '"]').classList.add("active");
+}
+
+makeActiveLink();
 
 /* Search bar function */
 
