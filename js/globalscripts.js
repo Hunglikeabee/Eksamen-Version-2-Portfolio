@@ -1,3 +1,61 @@
+/* ADD HEADER TO THE PAGES */
+
+const theHeader = document.querySelector("header");
+
+theHeader.innerHTML = ` <section class="header-menu">
+                        <a href="/index.html"><div class="logo"></div></a>
+                            <div class="hamburger__container">
+                                <label for="hamburger" class="hamburger__icon-menu" tabindex="0"><i class="fas fa-bars"></i></label>
+                                <input type="checkbox" id="hamburger">
+                                <div class="hamburger__dropdown-menu">
+                                    <a href="index.html" class="active">HOME</a>
+                                    <a href="posts.html">BLOGS</a>
+                                    <a href="contact.html">CONTACT</a>
+                                    <a href="about.html">ABOUT</a>
+                                </div>
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html" class="active">HOME</a></li>
+                                        <li><a href="posts.html">BLOGS</a></li>
+                                        <li><a href="contact.html">CONTACT</a></li>
+                                        <li><a href="about.html">ABOUT</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </section>
+                        <div class="search-bar">
+                            <input type="text" class="search-text" placeholder="Search blogs...">
+                            <button type="submit" class="search-button" aria-label="Search Button"><i class="fas fa-search"></i></button>
+                        </div>`
+
+/* ADD FOOTER TO THE PAGES */
+
+const theFooter = document.querySelector("footer");
+
+theFooter.innerHTML = `<section class="footer__container">
+                            <div class="footer-links">
+                                <h3>Links</h3>
+                                <a href="index.html">HOME</a>
+                                <a href="posts.html">BLOGS</a>
+                                <a href="contact.html">CONTACT</a>
+                                <a href="about.html">ABOUT</a>
+                            </div>
+                            <div class="social-media">
+                                <h3>Social Media</h3>
+                                <div>
+                                    <label>
+                                        <a href="https://www.facebook.com/groups/716522351730441" aria-label="Link to Facebook page"><i class="fab fa-facebook-f"></i></a>
+                                    </label>
+                                    <label>
+                                        <a href="https://www.instagram.com/elverum_frisbeeklubb/" aria-label="Link to Instagram page">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="copyright">&copy; Renovation Dad</div>`
+
 /* Search bar function */
 
 const searchText = document.querySelector(".search-text");
