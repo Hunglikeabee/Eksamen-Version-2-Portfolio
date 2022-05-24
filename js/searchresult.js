@@ -1,4 +1,4 @@
-const APIURL = "hunglikeabee.com:81/wordpress/";
+const APIURL = "www.hunglikeabee.com:81/wordpress/";
 
 const getParameter = document.location.search;
 const theParameter = new URLSearchParams(getParameter);

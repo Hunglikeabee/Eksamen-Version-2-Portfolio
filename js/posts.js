@@ -1,4 +1,4 @@
-const APIURL = "hunglikeabee.com:81/wordpress/";
+const APIURL = "www.hunglikeabee.com:81/wordpress/";
 
 const postsAPI = `${APIURL}wp-json/wp/v2/posts?_embed&per_page=100`;
 
