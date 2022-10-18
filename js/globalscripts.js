@@ -61,10 +61,12 @@ theFooter.innerHTML = `<section class="footer__container">
 function makeActiveLink() {
     let url = window.location.href;
     let lastPart = url.split("/")[3];
+    console.log(lastPart)
+    console.log("hey")
     if(!lastPart) {
         lastPart = "index.html";
     }
-    else {
+    else if (lastPart.endsWith(".html")){
         document.querySelector('nav a[href="' + lastPart + '"]').classList.add("active");
     }
 
