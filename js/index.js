@@ -1,7 +1,7 @@
-const APIURL = "www.hunglikeabee.com:81/wordpress/";
+const APIURL = "https://noroffcors.herokuapp.com/https://hctest.elverumfrisbee.no/wp-json/wp/v2/";
 
-const postsAPI = `${APIURL}wp-json/wp/v2/posts?_embed&per_page=100`;
-const pagesAPI = `${APIURL}wp-json/wp/v2/pages?_embed&per_page=100`;
+const postsAPI = `${APIURL}posts?_embed&per_page=100`;
+const pagesAPI = `${APIURL}pages?_embed&per_page=100`;
 var postsArray = [];
 
 async function getMyBlog() {

@@ -67,7 +67,7 @@ function makeActiveLink() {
     else {
         document.querySelector('nav a[href="' + lastPart + '"]').classList.add("active");
     }
-    
+
 }
 
 makeActiveLink();
@@ -97,7 +97,7 @@ const headerMenu = document.querySelector(".header-menu")
 
 function scrollFunction() {
     const scroll = window.scrollY;
-    
+
     if (scroll > 100) {
         hamburgerMenu.classList.add("scrolled-hamburger")
         headerMenu.classList.add("scrolled-menu")
